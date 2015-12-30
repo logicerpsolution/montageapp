@@ -6,12 +6,12 @@
     <script type="text/montage-serialization">
     <script type="text/montage-serialization">{
 
-			"signin": {
+          "signin": {
                 "prototype": "ui/components/signin.reel",
                 "properties": {
                 }
             },
-			"signup": {
+           "signup": {
                 "prototype": "ui/components/signup.reel",
                 "properties": {
                 }
@@ -21,11 +21,11 @@
                 "properties": {
                     "element": {"#": "content"},
                     "switchComponents": {
-						"signin": {"@": "signin"},
+                        "signin": {"@": "signin"},
                         "signup": {"@": "signup"}
                     },
                     "delegate": {"@": "owner"}
-				},
+             },
                 "bindings": {
                     "switchValue": {"<-": "@owner.selectedItem"}
                 }
