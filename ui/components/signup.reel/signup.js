@@ -7,10 +7,11 @@ var Component = require("montage/ui/component").Component;
  * @class Signup
  * @extends Component
  */
-exports.Signup = Component.specialize(/** @lends Signup# */ {
-    constructor: {
-        value: function Signup() {
-            this.super();
-        }
-    }
-});
+//exports.Signup = Component.specialize(/** @lends Signup# */ {
+  //  constructor: {
+  //      value: function Signup() {
+  //          this.super();
+ //       }
+//    }
+//});
+exports.Signup=Montage.create(Component);
