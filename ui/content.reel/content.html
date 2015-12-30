@@ -14,7 +14,40 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="owner" class="Content">
-    </div>
+  <script type="text/montage-serialization">{
+
+                                                "signin": {
+                                                    "prototype": "ui/components/signin.reel",
+                                                    "properties": {
+                                                    }
+                                                },
+                                                "signup": {
+                                                    "prototype": "ui/components/signup.reel",
+                                                    "properties": {
+                                                    }
+                                                },
+                                                "content": {
+                                                    "prototype": "montage/ui/substitution.reel",
+                                                    "properties": {
+                                                        "element": {"#": "content"},
+                                                        "switchComponents": {
+                                                            "signin": {"@": "signin"},
+                                                            "signup": {"@": "signup"}
+                                                        },
+                                                        "delegate": {"@": "owner"}
+                                                    },
+                                                    "bindings": {
+                                                        "switchValue": {"<-": "@owner.selectedItem"}
+                                                    }
+                                                },
+
+                                                "owner": {
+                                                    "properties": {
+                                                        "element": {"#": "content"},
+                                                        "contentDeck": {"@": "content"}
+                                                    }
+                                                }
+
+                                            }</script>
 </body>
 </html>
