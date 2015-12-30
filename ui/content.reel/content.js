@@ -1,7 +1,8 @@
 /**
  * @module ui/content.reel
  */
-var Component = require("montage/ui/component").Component;
+var Montage = require("montage/core/core").Montage,
+    Component = require("montage/ui/component").Component;
 
 /**
  * @class Content
